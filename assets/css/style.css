@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffffff;
+  color: #333333;
+  font-family: 'Montserrat';
+}
+
+.brand-text-primary {
+  color: #C3083F;
+}
+
+.brand-bg-primary {
+  background-color: #C3083F;
+}
+
+.brand-text-secondary {
+  color: #4E4E50;
+}
+
+.brand-bg-secondary {
+  background-color: #4E4E50;
+}
+
+:root {
+  --brand-color: #C3083F;
+}
+
+/* nav */
+
+.brand-link .brand-image {
+  float: left;
+  line-height: .8;
+  margin-left: .8rem;
+  margin-right: .5rem;
+  margin-top: 0 !important;
+  max-height: 33px;
+  width: auto;
+}
+
+.content-header {
+    background-image: url('../images/header-bg-image.png');
+    background-position: center;
+    background-size: cover
+}
+
+.rotate {
+  transform: rotate(-90deg); 
+}
+
+.service-bg-image {
+  background-image: url('../images/service-bg-image.png');
+  background-position: center;
+  background-size: cover
+}
+
+.service-overlay {
+    background-color: rgba(116, 116, 117, 0.88);
+    min-height: 1024px;
+}
+
+.contact-section {
+  min-height: 1024px;
+}
+
+.card-container {
+  width: 265px; 
+  height: 519px;
+  background-color: #282828
+}
+
+.card-container:hover{
+  transform: scale(1.3);
+}
+
+.service-title-box::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #C3083F;
+  width: 81px;
+  margin: 0 auto
+}
+
+.service-paragraphy p{
+  font-size: 16px;
+  width: 70%;
+  margin: 0 auto
+}
+
+.service-paragraphy {
+    height: 192px
+}
+
+
+.client-bg-image {
+  background-image: url('../images/client-bg-image.png');
+  background-position: center;
+  background-size: cover
+}
+
+.client-overlay {
+    background-color: rgba(255, 255, 255, 0.86);
+    min-height: 1024px;
+}
+
+.client-content-text {
+    width: 50%;
+    margin: 0 auto
+}
+
+
+/* pricing section */
+
+  .price {
+    background-color: #EFEBEB;
+    border-top: solid rgba(78, 78, 80, 0.5) 1px ;
+    border-bottom: rgba(78, 78, 80, 0.5) 1px 
+    
+  }
+
+  .price h4{
+      font-size: 2.875rem
+  }
+
+  .price-header {
+      background-color: #EFEBEB
+  }
+
+  .price-features p{
+      padding: 2px 0
+  }
+
+  section {
+    min-height: 1024px
+  }
+
+  /* form section */
+
+  button {
+      background-color: #000000 !important;
+      color: #ffffff !important;
+  }
+
+  .navbar-h {
+    z-index: 3;
+    top: 35px !important;
+  }
+
+  .client-img {
+    height: 195px;
+    width: 190px;
+    border-radius: 150px;
+    background-color: white;
+    border: 6px solid #C3083F
+  }
+
+  .client-img img{
+    height: 180px;
+    width: 170px;
+  }
+
+  .os-content {
+    padding: 16 0 !important
+  }
+
+  .active {
+    background-color: transparent !important
+  }
+
+
+

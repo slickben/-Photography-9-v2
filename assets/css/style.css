@@ -531,5 +531,8 @@ a.article, a.article:hover {
     width: 100%
   }
 
+  .price-features p{
+    font-size: .9rem
+  }
 
 

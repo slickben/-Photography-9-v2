@@ -18,7 +18,11 @@ let mySwiper = new Swiper('.swiper-container', {
   }
 })
 
+
+
 $(document).ready(function () {
+  AOS.init();
+
   $('#sidebarCollapse').on('click', function () {
       $('#sidebar').toggleClass('active');
   });
@@ -28,6 +32,8 @@ $(document).ready(function () {
 
   $('#content').scrollspy({ target: '#sidebar' })
 
+  
+  
   
 })
 

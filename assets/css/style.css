@@ -108,6 +108,10 @@ outline: 1px solid slategrey;
     text-align: center;
     background: var(--brand-color);
 }
+#sidebar.active .nav-icon {
+    width: 0
+}
+
 
 #sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
     display: none;
@@ -154,6 +158,7 @@ outline: 1px solid slategrey;
 
 #sidebar .sidebar-header {
     padding: 20px;
+    padding-top: 3rem;
     background: var(--brand-color);
 }
 
@@ -548,5 +553,9 @@ a.article, a.article:hover {
   .price-features p{
     font-size: .9rem
   }
+
+  .nav-icon {
+    width: 3rem
+}
 
 

@@ -5,6 +5,9 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 
+html {
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
@@ -103,6 +106,7 @@ outline: 1px solid slategrey;
     min-width: 80px;
     max-width: 80px;
     text-align: center;
+    background: var(--brand-color);
 }
 
 #sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
@@ -161,7 +165,6 @@ outline: 1px solid slategrey;
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
     background: var(--brand-color);
 }
 
@@ -342,14 +345,15 @@ a.article, a.article:hover {
 }
 
 .head-slide {
-    height: 622px;
+    height: 100vh;
     max-height: 100vh;
+    /* margin-bottom: 3rem */
 }
 
 .head-slide-img {
   width: 1440px;
   max-width: 100%;
-  min-height: 570px;
+  min-height: 100vh;
   object-fit: cover;
 }
 
@@ -519,16 +523,26 @@ a.article, a.article:hover {
     width: 170px;
   }
 
+  .carousel-caption {
+    bottom: 60px;
+}
+
+.carousel-indicators {
+    bottom: 20px;
+}
+
   
 
   .active {
-    background-color: transparent !important
+    /* background-color: transparent !important */
   }
 
   /* portfolio */
 
   #portfolio {
-    width: 100%
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem
   }
 
   .price-features p{

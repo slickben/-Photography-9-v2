@@ -22,6 +22,9 @@ let mySwiper = new Swiper('.swiper-container', {
 
 $(document).ready(function () {
   AOS.init();
+  window.addEventListener('load', AOS.refresh)
+
+  
 
   $('#sidebarCollapse').on('click', function () {
       $('#sidebar').toggleClass('active');

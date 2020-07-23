@@ -1,11 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-
 /* sidebar */
 /*
     DEMO STYLE
@@ -13,10 +5,24 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 
 
+html {
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
 }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* sidebar */
+
 
 p {
     font-family: 'Poppins', sans-serif;
@@ -100,7 +106,14 @@ outline: 1px solid slategrey;
     min-width: 80px;
     max-width: 80px;
     text-align: center;
+    background: var(--brand-color);
 }
+
+#sidebar.active .nav-icon {
+    width: 0
+}
+
+
 
 #sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
     display: none;
@@ -147,6 +160,7 @@ outline: 1px solid slategrey;
 
 #sidebar .sidebar-header {
     padding: 20px;
+    padding-top: 3rem;
     background: var(--brand-color);
 }
 
@@ -158,7 +172,6 @@ outline: 1px solid slategrey;
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
     background: var(--brand-color);
 }
 
@@ -339,14 +352,15 @@ a.article, a.article:hover {
 }
 
 .head-slide {
-    height: 622px;
+    height: 100vh;
     max-height: 100vh;
+    /* margin-bottom: 3rem */
 }
 
 .head-slide-img {
   width: 1440px;
   max-width: 100%;
-  min-height: 570px;
+  min-height: 100vh;
   object-fit: cover;
 }
 
@@ -394,7 +408,7 @@ a.article, a.article:hover {
 }
 
 .service-bg-image {
-  background-image: url('../images/1195x1024.png');
+  background-image: url('../images/service-bg-image.png');
   background-position: center;
   background-size: cover
 }
@@ -450,7 +464,7 @@ a.article, a.article:hover {
 
 
 .client-bg-image {
-  background-image: url('../images/1195x1024.png');
+  background-image: url('../images/client-bg-image.png');
   background-position: center;
   background-size: cover
 }
@@ -516,21 +530,34 @@ a.article, a.article:hover {
     width: 170px;
   }
 
+  .carousel-caption {
+    bottom: 60px;
+}
+
+.carousel-indicators {
+    bottom: 20px;
+}
+
   
 
   .active {
-    background-color: transparent !important
+    /* background-color: transparent !important */
   }
 
   /* portfolio */
 
   #portfolio {
-    width: 100%
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem
   }
 
   .price-features p{
     font-size: .9rem
   }
 
+  .nav-icon {
+      width: 3rem
+  }
 
 

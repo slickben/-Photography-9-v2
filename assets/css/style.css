@@ -68,7 +68,7 @@ a, a:hover, a:focus {
     align-items: stretch;
     max-height: 100vh;
     overflow: hidden;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     margin: 0 auto;
 }
 
@@ -360,7 +360,7 @@ a.article, a.article:hover {
 }
 
 .head-slide-img {
-  width: 1440px;
+  width: calc(100% - 10px);
   max-width: 100%;
   min-height: 100vh;
   object-fit: cover;

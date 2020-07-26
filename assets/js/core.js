@@ -33,7 +33,10 @@ $(document).ready(function () {
   $.widget.bridge('uibutton', $.ui.button)
 
 
-  $('#content').scrollspy({ target: '#sidebar' })
+  $('ul#navbar li a' ).on( 'click', function() {
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+});
 
   
   

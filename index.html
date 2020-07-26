@@ -46,9 +46,10 @@
                     </strong>
                 </div>
 
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a class=" flex align-items-center justify-content-between" href="#home" data-toggle="collapse" aria-expanded="false">
+                <ul id="navbar" class="list-unstyled components">
+                    <li class="">
+                        <a class=" flex align-items-center justify-content-between" href="#home" 
+                        >
                           <i class="nav-icon  fas fa-home"></i>
                             <span class="">Home</span>
                         </a>
@@ -98,7 +99,7 @@
             </nav>
 
             <!-- Page Content Holder -->
-            <div id="content" data-spy="scroll" data-target="#sidebar">
+            <div id="content" data-spy="scroll" data-offset="0" data-target="#navbar">
                <!-- Main content -->
               <div id="home" class="vh-100 position-relative">
                 <!-- Navbar -->
@@ -672,6 +673,7 @@
          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
          <!-- jQuery -->
         <script src="plugins/jquery/jquery.min.js"></script>
+        <script src="./plugins/jquery-ui/jquery-ui.min.js"></script>
         <!-- Bootstrap 4 -->
         <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 

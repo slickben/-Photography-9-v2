@@ -221,6 +221,10 @@ ul ul a {
     background: #6d7fcc;
 }
 
+#content {
+    position: relative
+}
+
 ul.CTAs {
     padding: 20px;
 }
@@ -539,7 +543,7 @@ a.article, a.article:hover {
   
 
   .active {
-    /* background-color: transparent !important */
+background-color: rgba(116, 116, 117, 0.88) !important;
   }
 
   /* portfolio */
